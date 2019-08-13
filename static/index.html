@@ -1,0 +1,96 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js">
+		</script>
+		<script src="custom.js"></script>
+	</head>
+	<body onload="init()">
+		<nav class="navbar navbar-light bg-light">
+			<a class="navbar-brand" href="#">Just for Demo Purpose</a>
+		</nav>
+		<div class="row">
+			<div class="offset-sm-1 col-sm-5">
+				<form>
+					<div class="form-group" id="days">
+						<label for="days">How many days do you play on average per week</label><br>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1">
+							<label class="form-check-label" for="inlineRadio1">1</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2">
+							<label class="form-check-label" for="inlineRadio2">2</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3">
+							<label class="form-check-label" for="inlineRadio1">3</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="4">
+							<label class="form-check-label" for="inlineRadio2">4</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="5">
+							<label class="form-check-label" for="inlineRadio1">5</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="6">
+							<label class="form-check-label" for="inlineRadio2">6</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio7" value="7">
+							<label class="form-check-label" for="inlineRadio1">7</label>
+						</div>
+					</div>
+					<div class="form-group" id="hours">
+						<label for="days">How many days do you play on average per week</label><br>
+						<div class="form-check" id="days">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio11" value="1">
+							<label class="form-check-label" for="inlineRadio1">0-30mins</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio12" value="2">
+							<label class="form-check-label" for="inlineRadio2">30mins-1h</label>
+						</div>
+						<div class="form-check" id="days">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio13" value="3">
+							<label class="form-check-label" for="inlineRadio1">1h-2hrs</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio14" value="4">
+							<label class="form-check-label" for="inlineRadio2">2hrs-5hrs</label>
+						</div>
+						<div class="form-check" id="days">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio15" value="5">
+							<label class="form-check-label" for="inlineRadio1">>5hrs</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="form-group">
+							<label for="exampleFormControlInput1">Which game do you play</label>
+							<input type="text" class="form-control" id="game">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="form-group">
+							<label for="exampleFormControlInput1">What's your budget?</label>
+							      <div class="input-group">
+									  <div class="input-group-prepend">
+										  <div class="input-group-text">£</div>
+									  </div>
+									  <input type="number" class="form-control" id="budget">
+								  </div>
+						</div>
+					</div>
+					<button type="submit" class="btn btn-primary" id="submit" onclick="dopost();return false">Submit</button>
+				</form>
+			</div>
+			<div class="col-sm-6">
+				<h1 class="display-6">Best Phones for you</h1>
+				<div id="output">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
